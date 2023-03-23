@@ -141,3 +141,4 @@ dmypy.json
 /models/try12/
 /models/try14/
 /configs/
+/train_data/splits/

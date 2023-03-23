@@ -1,0 +1,1 @@
+Icelandic NER made in spaCy using the MIM-GOLD-2 dataset

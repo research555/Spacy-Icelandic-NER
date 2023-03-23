@@ -1,0 +1,191 @@
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try7/model-best
+test_set: ./train_set/try7/TEST_combined7_reduced_O_80_20.pkl
+Precision: 0.5250431778929189, Recall: 0.7619047619047619, F1 Score: 0.621676891615542
+Incorrect Entity Count: {'B-Person': 21, 'I-Person': 14, 'B-Location': 39, 'I-Location': 6, 'B-Organization': 8, 'I-Organization': 6, 'B-Miscellaneous': 54, 'I-Miscellaneous': 27, 'B-Date': 2, 'I-Date': 5, 'B-Time': 4, 'I-Time': 1, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 1, 'I-Money': 2}
+most inaccurate Ent: B-Miscellaneous, number missed: 54
+least inaccurate Ent: B-Percent, number missed: 0
+Correct Entity Count: {'B-Person': 143, 'I-Person': 60, 'B-Location': 131, 'I-Location': 3, 'B-Organization': 58, 'I-Organization': 5, 'B-Miscellaneous': 42, 'I-Miscellaneous': 40, 'B-Date': 61, 'I-Date': 47, 'B-Time': 5, 'I-Time': 4, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 4, 'I-Money': 5}
+Most Accurate Ent: B-Person, number correct: 143
+Least Accurate Ent: B-Percent, number correct: 0
+
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try1/model-best
+test_set: ./train_set/try7/TEST_combined7_reduced_O_80_20.pkl
+Precision: 0.5849358974358975, Recall: 0.4573934837092732, F1 Score: 0.5133614627285514
+Incorrect Entity Count: {'B-Person': 76, 'I-Person': 26, 'B-Location': 86, 'I-Location': 9, 'B-Organization': 43, 'I-Organization': 7, 'B-Miscellaneous': 65, 'I-Miscellaneous': 60, 'B-Date': 21, 'I-Date': 21, 'B-Time': 4, 'I-Time': 3, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 5, 'I-Money': 7}
+most inaccurate Ent: B-Location, number missed: 86
+least inaccurate Ent: B-Percent, number missed: 0
+Correct Entity Count: {'B-Person': 88, 'I-Person': 48, 'B-Location': 84, 'I-Location': 0, 'B-Organization': 23, 'I-Organization': 4, 'B-Miscellaneous': 31, 'I-Miscellaneous': 7, 'B-Date': 42, 'I-Date': 31, 'B-Time': 5, 'I-Time': 2, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 0, 'I-Money': 0}
+Most Accurate Ent: B-Person, number correct: 88
+Least Accurate Ent: I-Location, number correct: 0
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try2/model-best
+test_set: ./train_set/try7/TEST_combined7_reduced_O_80_20.pkl
+Precision: 0.6325966850828729, Recall: 0.5739348370927319, F1 Score: 0.6018396846254928
+Incorrect Entity Count: {'B-Person': 56, 'I-Person': 13, 'B-Location': 54, 'I-Location': 6, 'B-Organization': 36, 'I-Organization': 9, 'B-Miscellaneous': 72, 'I-Miscellaneous': 61, 'B-Date': 6, 'I-Date': 6, 'B-Time': 5, 'I-Time': 4, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 5, 'I-Money': 7}
+most inaccurate Ent: B-Miscellaneous, number missed: 72
+least inaccurate Ent: B-Percent, number missed: 0
+Correct Entity Count: {'B-Person': 108, 'I-Person': 61, 'B-Location': 116, 'I-Location': 3, 'B-Organization': 30, 'I-Organization': 2, 'B-Miscellaneous': 24, 'I-Miscellaneous': 6, 'B-Date': 57, 'I-Date': 46, 'B-Time': 4, 'I-Time': 1, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 0, 'I-Money': 0}
+Most Accurate Ent: B-Location, number correct: 116
+Least Accurate Ent: B-Percent, number correct: 0
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try3/model-best
+test_set: ./train_set/try7/TEST_combined7_reduced_O_80_20.pkl
+Precision: 0.754, Recall: 0.9448621553884712, F1 Score: 0.8387096774193549
+Incorrect Entity Count: {'B-Person': 4, 'I-Person': 2, 'B-Location': 2, 'I-Location': 2, 'B-Organization': 1, 'I-Organization': 1, 'B-Miscellaneous': 7, 'I-Miscellaneous': 13, 'B-Date': 4, 'I-Date': 2, 'B-Time': 2, 'I-Time': 2, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 0, 'I-Money': 2}
+most inaccurate Ent: I-Miscellaneous, number missed: 13
+least inaccurate Ent: B-Percent, number missed: 0
+Correct Entity Count: {'B-Person': 160, 'I-Person': 72, 'B-Location': 168, 'I-Location': 7, 'B-Organization': 65, 'I-Organization': 10, 'B-Miscellaneous': 89, 'I-Miscellaneous': 54, 'B-Date': 59, 'I-Date': 50, 'B-Time': 7, 'I-Time': 3, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 5, 'I-Money': 5}
+Most Accurate Ent: B-Location, number correct: 168
+Least Accurate Ent: B-Percent, number correct: 0
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try4/model-best
+test_set: ./train_set/try7/TEST_combined7_reduced_O_80_20.pkl
+Precision: 0.754, Recall: 0.9448621553884712, F1 Score: 0.8387096774193549
+Incorrect Entity Count: {'B-Person': 4, 'I-Person': 2, 'B-Location': 2, 'I-Location': 2, 'B-Organization': 1, 'I-Organization': 1, 'B-Miscellaneous': 7, 'I-Miscellaneous': 13, 'B-Date': 4, 'I-Date': 2, 'B-Time': 2, 'I-Time': 2, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 0, 'I-Money': 2}
+most inaccurate Ent: I-Miscellaneous, number missed: 13
+least inaccurate Ent: B-Percent, number missed: 0
+Correct Entity Count: {'B-Person': 160, 'I-Person': 72, 'B-Location': 168, 'I-Location': 7, 'B-Organization': 65, 'I-Organization': 10, 'B-Miscellaneous': 89, 'I-Miscellaneous': 54, 'B-Date': 59, 'I-Date': 50, 'B-Time': 7, 'I-Time': 3, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 5, 'I-Money': 5}
+Most Accurate Ent: B-Location, number correct: 168
+Least Accurate Ent: B-Percent, number correct: 0
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try5/model-best
+test_set: ./train_set/try7/TEST_combined7_reduced_O_80_20.pkl
+Precision: 0.6177703269069572, Recall: 0.9235588972431078, F1 Score: 0.7403314917127073
+Incorrect Entity Count: {'B-Person': 4, 'I-Person': 3, 'B-Location': 11, 'I-Location': 2, 'B-Organization': 2, 'I-Organization': 3, 'B-Miscellaneous': 12, 'I-Miscellaneous': 13, 'B-Date': 3, 'I-Date': 2, 'B-Time': 2, 'I-Time': 3, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 1, 'I-Money': 0}
+most inaccurate Ent: I-Miscellaneous, number missed: 13
+least inaccurate Ent: B-Percent, number missed: 0
+Correct Entity Count: {'B-Person': 160, 'I-Person': 71, 'B-Location': 159, 'I-Location': 7, 'B-Organization': 64, 'I-Organization': 8, 'B-Miscellaneous': 84, 'I-Miscellaneous': 54, 'B-Date': 60, 'I-Date': 50, 'B-Time': 7, 'I-Time': 2, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 4, 'I-Money': 7}
+Most Accurate Ent: B-Person, number correct: 160
+Least Accurate Ent: B-Percent, number correct: 0
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try6/model-best
+test_set: ./train_set/try7/TEST_combined7_reduced_O_80_20.pkl
+Precision: 0.6206896551724138, Recall: 0.22556390977443608, F1 Score: 0.33088235294117646
+Incorrect Entity Count: {'B-Person': 143, 'I-Person': 43, 'B-Location': 138, 'I-Location': 9, 'B-Organization': 66, 'I-Organization': 11, 'B-Miscellaneous': 96, 'I-Miscellaneous': 67, 'B-Date': 8, 'I-Date': 18, 'B-Time': 9, 'I-Time': 4, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 3, 'I-Money': 3}
+most inaccurate Ent: B-Person, number missed: 143
+least inaccurate Ent: B-Percent, number missed: 0
+Correct Entity Count: {'B-Person': 21, 'I-Person': 31, 'B-Location': 32, 'I-Location': 0, 'B-Organization': 0, 'I-Organization': 0, 'B-Miscellaneous': 0, 'I-Miscellaneous': 0, 'B-Date': 55, 'I-Date': 34, 'B-Time': 0, 'I-Time': 1, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 2, 'I-Money': 4}
+Most Accurate Ent: B-Date, number correct: 55
+Least Accurate Ent: I-Location, number correct: 0
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try7/model-best
+test_set: ./train_set/try7/TEST_combined7_reduced_O_80_20.pkl
+Precision: 0.5765258215962441, Recall: 0.7694235588972431, F1 Score: 0.6591519055287172
+Incorrect Entity Count: {'B-Person': 30, 'I-Person': 11, 'B-Location': 43, 'I-Location': 2, 'B-Organization': 8, 'I-Organization': 4, 'B-Miscellaneous': 42, 'I-Miscellaneous': 27, 'B-Date': 2, 'I-Date': 8, 'B-Time': 3, 'I-Time': 1, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 1, 'I-Money': 2}
+most inaccurate Ent: B-Location, number missed: 43
+least inaccurate Ent: B-Percent, number missed: 0
+Correct Entity Count: {'B-Person': 134, 'I-Person': 63, 'B-Location': 127, 'I-Location': 7, 'B-Organization': 58, 'I-Organization': 7, 'B-Miscellaneous': 54, 'I-Miscellaneous': 40, 'B-Date': 61, 'I-Date': 44, 'B-Time': 6, 'I-Time': 4, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 4, 'I-Money': 5}
+Most Accurate Ent: B-Person, number correct: 134
+Least Accurate Ent: B-Percent, number correct: 0
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try7/model-best
+test_set: ./train_set/try7/TEST_combined7_reduced_O_80_20.pkl
+Precision: 0.6649048625792812, Recall: 0.7882205513784462, F1 Score: 0.7213302752293579
+Incorrect Entity Count: {'B-Person': 25, 'I-Person': 14, 'B-Location': 47, 'I-Location': 2, 'B-Organization': 14, 'I-Organization': 3, 'B-Miscellaneous': 37, 'I-Miscellaneous': 18, 'B-Date': 2, 'I-Date': 5, 'B-Time': 0, 'I-Time': 1, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 0, 'I-Money': 1}
+most inaccurate Ent: B-Location, number missed: 47
+least inaccurate Ent: B-Time, number missed: 0
+Correct Entity Count: {'B-Person': 139, 'I-Person': 60, 'B-Location': 123, 'I-Location': 7, 'B-Organization': 52, 'I-Organization': 8, 'B-Miscellaneous': 59, 'I-Miscellaneous': 49, 'B-Date': 61, 'I-Date': 47, 'B-Time': 9, 'I-Time': 4, 'B-Percent': 0, 'I-Percent': 0, 'B-Money': 5, 'I-Money': 6}
+Most Accurate Ent: B-Person, number correct: 139
+Least Accurate Ent: B-Percent, number correct: 0
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try8/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train60test40\deleted90\TEST_combined_90_percent_60_40.pkl
+Precision: 0.8269448584202682, Recall: 0.7167325428194994, F1 Score: 0.7679043440955452
+Incorrect Entity Count: {'B-Person': 1794, 'I-Person': 790, 'B-Location': 1154, 'I-Location': 226, 'B-Organization': 1583, 'I-Organization': 971, 'B-Miscellaneous': 1878, 'I-Miscellaneous': 1742, 'B-Date': 223, 'I-Date': 154, 'B-Time': 67, 'I-Time': 117, 'B-Percent': 23, 'I-Percent': 13, 'B-Money': 111, 'I-Money': 119}
+most inaccurate Ent: B-Miscellaneous, number missed: 1878
+least inaccurate Ent: I-Percent, number missed: 13
+Correct Entity Count: {'B-Person': 7031, 'I-Person': 3531, 'B-Location': 3514, 'I-Location': 187, 'B-Organization': 3269, 'I-Organization': 1502, 'B-Miscellaneous': 1619, 'I-Miscellaneous': 820, 'B-Date': 2527, 'I-Date': 1401, 'B-Time': 588, 'I-Time': 538, 'B-Percent': 362, 'I-Percent': 22, 'B-Money': 369, 'I-Money': 464}
+Most Accurate Ent: B-Person, number correct: 7031
+Least Accurate Ent: I-Percent, number correct: 22
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try8/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train60test40\deleted90\TEST_combined_90_percent_60_40.pkl
+Precision: 0.835686889818689, Recall: 0.7430055025962954, F1 Score: 0.7866256410256411
+Incorrect Entity Count: {'B-Person': 1719, 'I-Person': 713, 'B-Location': 889, 'I-Location': 189, 'B-Organization': 1570, 'I-Organization': 1050, 'B-Miscellaneous': 1505, 'I-Miscellaneous': 1614, 'B-Date': 201, 'I-Date': 161, 'B-Time': 51, 'I-Time': 106, 'B-Percent': 27, 'I-Percent': 17, 'B-Money': 75, 'I-Money': 61}
+most inaccurate Ent: B-Person, number missed: 1719
+least inaccurate Ent: I-Percent, number missed: 17
+Correct Entity Count: {'B-Person': 7106, 'I-Person': 3608, 'B-Location': 3779, 'I-Location': 224, 'B-Organization': 3282, 'I-Organization': 1423, 'B-Miscellaneous': 1992, 'I-Miscellaneous': 948, 'B-Date': 2549, 'I-Date': 1394, 'B-Time': 604, 'I-Time': 549, 'B-Percent': 358, 'I-Percent': 18, 'B-Money': 405, 'I-Money': 522}
+Most Accurate Ent: B-Person, number correct: 7106
+Least Accurate Ent: I-Percent, number correct: 18
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try8/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train60test40\deleted90\TEST_combined_90_percent_60_40.pkl
+Precision: 0.835686889818689, Recall: 0.7430055025962954, F1 Score: 0.7866256410256411
+Incorrect Entity Count: {'B-Person': 1719, 'I-Person': 713, 'B-Location': 889, 'I-Location': 189, 'B-Organization': 1570, 'I-Organization': 1050, 'B-Miscellaneous': 1505, 'I-Miscellaneous': 1614, 'B-Date': 201, 'I-Date': 161, 'B-Time': 51, 'I-Time': 106, 'B-Percent': 27, 'I-Percent': 17, 'B-Money': 75, 'I-Money': 61}
+most inaccurate Ent: B-Person, number missed: 1719
+least inaccurate Ent: I-Percent, number missed: 17
+Correct Entity Count: {'B-Person': 7106, 'I-Person': 3608, 'B-Location': 3779, 'I-Location': 224, 'B-Organization': 3282, 'I-Organization': 1423, 'B-Miscellaneous': 1992, 'I-Miscellaneous': 948, 'B-Date': 2549, 'I-Date': 1394, 'B-Time': 604, 'I-Time': 549, 'B-Percent': 358, 'I-Percent': 18, 'B-Money': 405, 'I-Money': 522}
+Most Accurate Ent: B-Person, number correct: 7106
+Least Accurate Ent: I-Percent, number correct: 18
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try8/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train60test40\deleted90\TEST_combined_90_percent_60_40.pkl
+Precision: 0.835686889818689, Recall: 0.7430055025962954, F1 Score: 0.7866256410256411
+Incorrect Entity Count: {'B-Person': 1719, 'I-Person': 713, 'B-Location': 889, 'I-Location': 189, 'B-Organization': 1570, 'I-Organization': 1050, 'B-Miscellaneous': 1505, 'I-Miscellaneous': 1614, 'B-Date': 201, 'I-Date': 161, 'B-Time': 51, 'I-Time': 106, 'B-Percent': 27, 'I-Percent': 17, 'B-Money': 75, 'I-Money': 61}
+most inaccurate Ent: B-Person, number missed: 1719
+least inaccurate Ent: I-Percent, number missed: 17
+Correct Entity Count: {'B-Person': 7106, 'I-Person': 3608, 'B-Location': 3779, 'I-Location': 224, 'B-Organization': 3282, 'I-Organization': 1423, 'B-Miscellaneous': 1992, 'I-Miscellaneous': 948, 'B-Date': 2549, 'I-Date': 1394, 'B-Time': 604, 'I-Time': 549, 'B-Percent': 358, 'I-Percent': 18, 'B-Money': 405, 'I-Money': 522}
+Most Accurate Ent: B-Person, number correct: 7106
+Least Accurate Ent: I-Percent, number correct: 18
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\notebooks\try8/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train60test40\deleted90\TEST_combined_90_percent_60_40.pkl
+Precision: 0.835686889818689, Recall: 0.7430055025962954, F1 Score: 0.7866256410256411
+Incorrect Entity Count: {'B-Person': 1719, 'I-Person': 713, 'B-Location': 889, 'I-Location': 189, 'B-Organization': 1570, 'I-Organization': 1050, 'B-Miscellaneous': 1505, 'I-Miscellaneous': 1614, 'B-Date': 201, 'I-Date': 161, 'B-Time': 51, 'I-Time': 106, 'B-Percent': 27, 'I-Percent': 17, 'B-Money': 75, 'I-Money': 61}
+most inaccurate Ent: B-Person, number missed: 1719
+least inaccurate Ent: I-Percent, number missed: 17
+Correct Entity Count: {'B-Person': 7106, 'I-Person': 3608, 'B-Location': 3779, 'I-Location': 224, 'B-Organization': 3282, 'I-Organization': 1423, 'B-Miscellaneous': 1992, 'I-Miscellaneous': 948, 'B-Date': 2549, 'I-Date': 1394, 'B-Time': 604, 'I-Time': 549, 'B-Percent': 358, 'I-Percent': 18, 'B-Money': 405, 'I-Money': 522}
+Most Accurate Ent: B-Person, number correct: 7106
+Least Accurate Ent: I-Percent, number correct: 18
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\models\try10/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train70test30\deleted90\TEST_combined_90_percent_70_30.pkl
+Precision: 0.9269311064718163, Recall: 0.809955045931331, F1 Score: 0.8645040158548034
+Incorrect Entity Count: {'B-Person': 950, 'I-Person': 647, 'B-Location': 415, 'I-Location': 99, 'B-Organization': 729, 'I-Organization': 811, 'B-Miscellaneous': 792, 'I-Miscellaneous': 1037, 'B-Date': 128, 'I-Date': 110, 'B-Time': 20, 'I-Time': 30, 'B-Percent': 6, 'I-Percent': 2, 'B-Money': 37, 'I-Money': 21}
+most inaccurate Ent: I-Miscellaneous, number missed: 1037
+least inaccurate Ent in percent missed: I-Percent, number missed in percent missed: 2
+Correct Entity Count: {'B-Person': 5766, 'I-Person': 2901, 'B-Location': 2931, 'I-Location': 221, 'B-Organization': 3107, 'I-Organization': 1425, 'B-Miscellaneous': 1984, 'I-Miscellaneous': 1341, 'B-Date': 1943, 'I-Date': 1156, 'B-Time': 449, 'I-Time': 449, 'B-Percent': 316, 'I-Percent': 10, 'B-Money': 405, 'I-Money': 460}
+Most Accurate Ent: B-Person, number correct: 5766
+Least Accurate Ent: I-Percent, number correct: 10
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\models\try11/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train60test40\deleted60\TEST_combined_60_percent_60_40.pkl
+Precision: 0.9680091206285542, Recall: 0.8840231564818706, F1 Score: 0.9241118407033808
+Incorrect Entity Count: {'B-Person': 4117, 'I-Person': 2328, 'B-Location': 952, 'I-Location': 493, 'B-Organization': 1624, 'I-Organization': 2254, 'B-Miscellaneous': 1982, 'I-Miscellaneous': 3411, 'B-Date': 328, 'I-Date': 460, 'B-Time': 71, 'I-Time': 196, 'B-Percent': 43, 'I-Percent': 24, 'B-Money': 81, 'I-Money': 127}
+most inaccurate Ent: B-Person, number missed: 4117
+least inaccurate Ent in percent missed: I-Percent, number missed in percent missed: 24
+Correct Entity Count: {'B-Person': 31791, 'I-Person': 15711, 'B-Location': 17871, 'I-Location': 1464, 'B-Organization': 18042, 'I-Organization': 8545, 'B-Miscellaneous': 12223, 'I-Miscellaneous': 7551, 'B-Date': 10834, 'I-Date': 6161, 'B-Time': 2513, 'I-Time': 2368, 'B-Percent': 1472, 'I-Percent': 109, 'B-Money': 2054, 'I-Money': 2237}
+Most Accurate Ent: B-Person, number correct: 31791
+Least Accurate Ent: I-Percent, number correct: 109
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\models\try12/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train70test30\deleted90\TEST_combined_90_percent_70_30.pkl
+Precision: 0.8466475910602428, Recall: 0.7132712228809694, F1 Score: 0.7742574257425742
+Incorrect Entity Count: {'B-Person': 1427, 'I-Person': 845, 'B-Location': 767, 'I-Location': 129, 'B-Organization': 1280, 'I-Organization': 1132, 'B-Miscellaneous': 1261, 'I-Miscellaneous': 1402, 'B-Date': 193, 'I-Date': 152, 'B-Time': 37, 'I-Time': 49, 'B-Percent': 10, 'I-Percent': 2, 'B-Money': 66, 'I-Money': 50}
+most inaccurate Ent: B-Person, number missed: 1427
+least inaccurate Ent in percent missed: I-Percent, number missed in percent missed: 2
+Correct Entity Count: {'B-Person': 5289, 'I-Person': 2703, 'B-Location': 2579, 'I-Location': 191, 'B-Organization': 2556, 'I-Organization': 1104, 'B-Miscellaneous': 1515, 'I-Miscellaneous': 976, 'B-Date': 1878, 'I-Date': 1114, 'B-Time': 432, 'I-Time': 430, 'B-Percent': 312, 'I-Percent': 10, 'B-Money': 376, 'I-Money': 431}
+Most Accurate Ent: B-Person, number correct: 5289
+Least Accurate Ent: I-Percent, number correct: 10
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\models\try13/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train50test50\deleted50\TEST_combined_50_percent_50_50.pkl
+Precision: 0.9778500769399868, Recall: 0.8939281278762716, F1 Score: 0.9340077647804843
+Incorrect Entity Count: {'B-Person': 5789, 'I-Person': 3669, 'B-Location': 1221, 'I-Location': 744, 'B-Organization': 2679, 'I-Organization': 3377, 'B-Miscellaneous': 2466, 'I-Miscellaneous': 4568, 'B-Date': 504, 'I-Date': 521, 'B-Time': 198, 'I-Time': 303, 'B-Percent': 57, 'I-Percent': 25, 'B-Money': 166, 'I-Money': 104}
+most inaccurate Ent: B-Person, number missed: 5789
+least inaccurate Ent in percent missed: I-Percent, number missed in percent missed: 25
+Correct Entity Count: {'B-Person': 49968, 'I-Person': 24488, 'B-Location': 28276, 'I-Location': 2344, 'B-Organization': 28116, 'I-Organization': 13329, 'B-Miscellaneous': 19566, 'I-Miscellaneous': 12871, 'B-Date': 16784, 'I-Date': 9707, 'B-Time': 3735, 'I-Time': 3553, 'B-Percent': 2304, 'I-Percent': 223, 'B-Money': 3324, 'I-Money': 3824}
+Most Accurate Ent: B-Person, number correct: 49968
+Least Accurate Ent: I-Percent, number correct: 223
+
+model: C:\Users\imran\PycharmProjects\FactiVerse_Case\models\try14/model-best
+test_set: C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train80test20\deleted90\TEST_combined_90_percent_80_20.pkl
+Precision: 0.9331219208335693, Recall: 0.8197602109347794, F1 Score: 0.8727754237288134
+Incorrect Entity Count: {'B-Person': 737, 'I-Person': 474, 'B-Location': 256, 'I-Location': 73, 'B-Organization': 496, 'I-Organization': 389, 'B-Miscellaneous': 463, 'I-Miscellaneous': 479, 'B-Date': 73, 'I-Date': 53, 'B-Time': 24, 'I-Time': 58, 'B-Percent': 4, 'I-Percent': 2, 'B-Money': 22, 'I-Money': 20}
+most inaccurate Ent: B-Person, number missed: 737
+least inaccurate Ent in percent missed: I-Percent, number missed in percent missed: 2
+Correct Entity Count: {'B-Person': 3763, 'I-Person': 1820, 'B-Location': 2075, 'I-Location': 184, 'B-Organization': 1991, 'I-Organization': 952, 'B-Miscellaneous': 1309, 'I-Miscellaneous': 835, 'B-Date': 1294, 'I-Date': 807, 'B-Time': 330, 'I-Time': 330, 'B-Percent': 201, 'I-Percent': 20, 'B-Money': 255, 'I-Money': 312}
+Most Accurate Ent: B-Person, number correct: 3763
+Least Accurate Ent: I-Percent, number correct: 20
+
