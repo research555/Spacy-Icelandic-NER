@@ -7,6 +7,10 @@ from spacy.tokens import Doc, Span
 from sklearn.metrics import classification_report
 from pprint import PrettyPrinter
 from tqdm import tqdm
+from transformers import AutoTokenizer
+from transformers import AutoModelForTokenClassification  # for pytorch
+from transformers import TFAutoModelForTokenClassification  # for tensorflow
+from transformers import pipeline
 
 class Test:
     """
@@ -24,7 +28,7 @@ class Test:
        """
     def __init__(self, number: int, test_set_path: str = None):
         self.model_path = rf'C:\Users\imran\PycharmProjects\FactiVerse_Case\models\try{number}/model-best'
-        self.test_set_path = test_set_path
+        self.test_set_path = r'C:\Users\imran\PycharmProjects\FactiVerse_Case - Copy\TEST_combined_50_percent_50_50.pkl'
         self.nlp = spacy.load(self.model_path)
         self.correct_ents = {
             'B-Person': 0,
@@ -62,8 +66,10 @@ class Test:
             'B-Money': 0,
             'I-Money': 0
         }
+        self.tokenizer = AutoTokenizer.from_pretrained("m3hrdadfi/icelandic-ner-roberta")
+        self.bench_nlp = pipeline('ner', model="m3hrdadfi/icelandic-ner-roberta", tokenizer=self.tokenizer, grouped_entities=False)
 
-    def evaluate_ner_model(self):
+    def evaluate_ner_model(self, bench: bool = False):
         """
                 Initializes a new instance of the Test class.
 
@@ -80,10 +86,17 @@ class Test:
         correct_labels = []
         tp, fp, fn = 0, 0, 0
         for example in tqdm(data.values()):
+            if bench:
+                self.nlp = self.bench_nlp
             doc = self.nlp(example['text'])
             true_labels = set([(start, end, label) for start, end, label in example['entities'] if label != 'O'])
-            predicted_labels = set(
-                [(ent.start_char, ent.end_char, ent.label_) for ent in doc.ents if ent.label_ != 'O'])
+            if not bench:
+                predicted_labels = set(
+                    [(ent.start_char, ent.end_char, ent.label_) for ent in doc.ents if ent.label_ != 'O'])
+            if bench:
+                predicted_labels = set(
+                    [(ent['start'], ent['end'], ent['entity']) for ent in doc if ent['entity'] != 'O'])
+
             #print("Text:", example['text'])
             #print("Expected Entities:", true_labels)
             #print("Predicted Entities:", predicted_labels)
@@ -106,6 +119,7 @@ class Test:
         precision = tp / (tp + fp) if tp + fp > 0 else 0
         recall = tp / (tp + fn) if tp + fn > 0 else 0
         f1_score = 2 * (precision * recall) / (precision + recall) if precision + recall > 0 else 0
+        print(f'precision: {precision}, recall: {recall}, f1_score: {f1_score}')
         output = f'model: {self.model_path}\ntest_set: {self.test_set_path}\n' \
                  f'Precision: {precision}, Recall: {recall}, F1 Score: {f1_score}\n' \
                  f'Incorrect Entity Count: {self.incorrect_ents}\n' \
@@ -124,14 +138,10 @@ class Test:
         return output, correct_labels, incorrect_labels
 
 
+
+
 if __name__ == '__main__':
 
-    test_paths = [#(10, rf'C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train70test30\deleted90\TEST_combined_90_percent_70_30.pkl'),
-                  #(11, rf'C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train60test40\deleted60\TEST_combined_60_percent_60_40.pkl'),
-                  (12, rf'C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train70test30\deleted90\TEST_combined_90_percent_70_30.pkl'),
-                  (13, rf'C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train50test50\deleted50\TEST_combined_50_percent_50_50.pkl'),
-                  (14, rf'C:\Users\imran\PycharmProjects\FactiVerse_Case\train_data\splits\train80test20\deleted90\TEST_combined_90_percent_80_20.pkl')]
-    for item in test_paths:
 
-        eval = Test(item[0], test_set_path=item[1])
-        print(eval.evaluate_ner_model())
+        eval = Test(13)
+        print(eval.evaluate_ner_model(bench=True))
